@@ -25,5 +25,12 @@
 - **JavaScript (ES6+)**
 - **Vite** (for fast bundling)
 
+---
 
+## 🧑‍💻 Getting Started
 
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/shoppyglobe.git
+cd shoppyglobe
