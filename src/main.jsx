@@ -8,6 +8,7 @@ import NotFound from './components/NotFound.jsx'
 const Cart = lazy(() => import("./components/Cart.jsx"))
 const ProductDetails = lazy(() => import("./components/ProductDetails.jsx"))
 const ProductList = lazy(() => import("./components/ProductList.jsx"))
+const AllProducts = lazy(() => import("./components/AllProducts.jsx"))
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { path: "/", element: <ProductList /> },
-      { path: "product", element: <ProductDetails /> },
+      { path: "product/:id", element: <ProductDetails /> },
+      { path: "allproducts", element: <AllProducts /> },
       { path: "cart", element: <Cart /> },
     ]
   }

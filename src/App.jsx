@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import { Suspense } from 'react'
-import OnLoading from './components/OnLoading'
+
 import appStore from './utils/cartStore'
 import { Provider } from 'react-redux'
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <Provider store={appStore}>
       <Header />
-      <Suspense fallback={<OnLoading />}>
+      <Suspense fallback={<p>Loading.....</p>}>
         <Outlet />
       </Suspense>
     </Provider>
